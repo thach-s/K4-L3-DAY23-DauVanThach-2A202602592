@@ -1,0 +1,17 @@
+{"ts": 1791514568.7270885, "iso": "2026-10-09T02:56:08Z", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm", "weights": false, "count": 0, "latest_doc_ts": null, "ts": 1791514568.7227223}}
+{"ts": 1791514568.7322624, "iso": "2026-10-09T02:56:08Z", "step": "2_restore_snapshot", "target": "b", "ok": true, "backend": "fs", "rpo_seconds": 4.0, "docs_lost": 2, "embed_model_version": "embed-model=vi-e5-base@v3", "snapshot_at": 1791514563.9071105}
+{"ts": 1791514568.7328718, "iso": "2026-10-09T02:56:08Z", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1791514574.8536494, "iso": "2026-10-09T02:56:14Z", "step": "4_wait_ready", "target": "b", "ok": true, "waited_s": 6.12, "state": {"region": "b", "ready": true, "reasons": [], "pool_state": "full", "vectors": {"count": 216, "latest_doc_ts": 1791514563.8913202}, "ts": 1791514574.8518121}}
+{"ts": 1791514574.8544219, "iso": "2026-10-09T02:56:14Z", "step": "5_dns_cutover", "target": "b", "ok": true, "active_region": "b"}
+{"ts": 1791514779.9090421, "iso": "2026-10-09T02:59:39Z", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1791514779.9116368, "iso": "2026-10-09T02:59:39Z", "step": "2_restore_snapshot", "target": "b", "ok": true, "backend": "fs", "rpo_seconds": 74.0, "docs_lost": 37, "embed_model_version": "test", "snapshot_at": 1791514779.9094174}
+{"ts": 1791514779.9123228, "iso": "2026-10-09T02:59:39Z", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1791514780.9128282, "iso": "2026-10-09T02:59:40Z", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "state": {"error": "ConnectError"}, "error": "readiness_timeout"}
+{"ts": 1791515161.5364606, "iso": "2026-10-09T03:06:01Z", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1791515161.5390112, "iso": "2026-10-09T03:06:01Z", "step": "2_restore_snapshot", "target": "b", "ok": true, "backend": "fs", "rpo_seconds": 74.0, "docs_lost": 37, "embed_model_version": "test", "snapshot_at": 1791515161.5367682}
+{"ts": 1791515161.5396721, "iso": "2026-10-09T03:06:01Z", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1791515162.5401385, "iso": "2026-10-09T03:06:02Z", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "state": {"error": "ConnectError"}, "error": "readiness_timeout"}
+{"ts": 1791515325.3188555, "iso": "2026-10-09T03:08:45Z", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1791515325.3210182, "iso": "2026-10-09T03:08:45Z", "step": "2_restore_snapshot", "target": "b", "ok": true, "backend": "fs", "rpo_seconds": 74.0, "docs_lost": 37, "embed_model_version": "test", "snapshot_at": 1791515325.3192}
+{"ts": 1791515325.321772, "iso": "2026-10-09T03:08:45Z", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1791515326.3223107, "iso": "2026-10-09T03:08:46Z", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "state": {"error": "ConnectError"}, "error": "readiness_timeout"}

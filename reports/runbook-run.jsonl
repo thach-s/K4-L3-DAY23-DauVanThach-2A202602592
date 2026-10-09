@@ -1,0 +1,7 @@
+{"ts": 1791514568.7025478, "iso": "2026-10-09T02:56:08Z", "step": 1, "name": "xac_nhan_outage", "primary": "a", "target": "b", "primary_ready_checks": [false, false, false], "outage_confirmed": true, "target_alive": true}
+{"ts": 1791514568.7032938, "iso": "2026-10-09T02:56:08Z", "step": 2, "name": "thong_bao_incident", "confirmed": true, "outage_ts": 1791514551.1767771, "notification_delay_s": 17.526}
+{"ts": 1791514574.8547049, "iso": "2026-10-09T02:56:14Z", "step": 3, "name": "scale_gpu_pool", "failover_ok": true, "waited_s": 6.12}
+{"ts": 1791514574.8549123, "iso": "2026-10-09T02:56:14Z", "step": 4, "name": "verify_state_replica", "vector_count": 216, "weights": true, "embed_model_version": "embed-model=vi-e5-base@v3", "docs_lost": 2}
+{"ts": 1791514574.8551211, "iso": "2026-10-09T02:56:14Z", "step": 5, "name": "dns_cutover", "ok": true, "active_region": "b"}
+{"ts": 1791514575.1585767, "iso": "2026-10-09T02:56:15Z", "step": 6, "name": "verify_golden_signals", "requests": 10, "p95_latency_ms": 90.5, "errors": 0, "error_rate": 0.0, "ok": true}
+{"ts": 1791514575.1590343, "iso": "2026-10-09T02:56:15Z", "step": 7, "name": "post_incident", "elapsed_s": 8.412, "measure_command": "python3 tools/measure_rto.py --loadgen reports/drill-2-withdr.jsonl --target-rto 300", "incident_ts": 1791514568.7032938}
